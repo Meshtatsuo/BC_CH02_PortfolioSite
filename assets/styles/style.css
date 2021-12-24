@@ -9,7 +9,7 @@ body {
 }
 
 header {
-  background-color: #735290;
+  background-color: #f0edee;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -30,7 +30,7 @@ header nav {
 }
 
 header nav {
-  flex: 1;
+  flex: 1 1 20%;
   margin: 7px 0;
   display: flex;
   flex-wrap: wrap;
@@ -45,13 +45,74 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #f0edee;
-  font-weight: lighter;
-  font-size: 1.55vw;
-
+  color: #00adee;
+  font-weight: bold;
+  font-size: 1.25vw;
   text-decoration: none;
 }
 
 nav a:hover {
   color: #00adee;
+}
+
+
+section{
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
+
+/* GENERAL PURPOSE CLASSES */
+.section-heading{
+  flex: 0 0 20%;
+  border-right: 5px solid #00adee;
+  padding: 5%;
+  text-align: right;
+}
+
+.section-content{
+  flex: 1 1 80%;
+  padding: 5%;
+  border-bottom: 5px solid #00adee;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section-content h3{
+  font-size: 24px;
+  line-height: 1.8;
+}
+
+.section-content p{
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* BEGIN ABOUT ME SECTION */
+
+
+/* BEGIN PORTFOLIO SECTION */
+
+#portfolio{
+  
+}
+
+.portfolio-item{
+  flex: 0 0 25%;
+  padding: 3%;
+}
+
+.portfolio-item-title{
+  text-align: center;
+  color: #00adee;
+  font-size: 18px;
+  background-color: black;
+}
+
+.portfolio-item-description{
+  color: #f0edee;
+  text-align: center;
+  font-size: 12px;
+  background-color: black;
 }
