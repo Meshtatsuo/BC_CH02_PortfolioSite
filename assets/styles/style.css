@@ -55,6 +55,17 @@ nav a:hover {
   color: #00adee;
 }
 
+footer{
+  background-color: #00adee;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+footer p{
+  font-size: 10px;
+}
 
 section{
   display: flex;
@@ -73,7 +84,6 @@ section{
 .section-content{
   flex: 1 1 80%;
   padding: 5%;
-  border-bottom: 5px solid #00adee;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -87,6 +97,10 @@ section{
 .section-content p{
   font-size: 16px;
   line-height: 1.4;
+}
+
+.social-icons{
+  
 }
 
 /* BEGIN ABOUT ME SECTION */
@@ -116,3 +130,5 @@ section{
   font-size: 12px;
   background-color: black;
 }
+
+/* BEGIN CONTACT ME SECTION */
