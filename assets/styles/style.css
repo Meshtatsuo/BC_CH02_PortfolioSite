@@ -100,9 +100,30 @@ section{
 }
 
 .social-icons{
-  
+  flex: 1 1 20%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
+.social-icons ul{
+  flex: 0 1 40%;
+  text-decoration: none;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.social-icons a{
+  flex: 33%;
+}
+
+.social-icons ul li{
+  text-decoration: none;
+  padding: 5%;
+  flex: 33%;
+}
 /* BEGIN ABOUT ME SECTION */
 
 
@@ -132,3 +153,4 @@ section{
 }
 
 /* BEGIN CONTACT ME SECTION */
+
