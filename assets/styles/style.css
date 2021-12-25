@@ -8,6 +8,8 @@ body {
   font-family: "Oswald", sans-serif;
 }
 
+
+/* BEGIN HEADER STYLING */
 header {
   background-color: #f0edee;
   display: flex;
@@ -30,17 +32,21 @@ header nav {
 }
 
 header nav {
-  flex: 1 1 20%;
-  margin: 7px 0;
+  flex: 1 1 50%;
+  margin: 0 auto;
+  padding: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 header nav ul {
+  margin: 0 auto;
+  padding: 0;
 }
 
 nav ul li {
   display: inline;
+  flex: 0 0 33%;
   margin: 0 25px;
 }
 
@@ -51,14 +57,21 @@ nav ul li a {
   text-decoration: none;
 }
 
+nav ul li:hover{
+  background-color: black;
+
+}
+
 nav a:hover {
   color: #00adee;
 }
+/* END HEADER STYLING */
 
+/* BEGIN FOOTER STYLING */
 footer{
   background-color: #00adee;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -66,6 +79,30 @@ footer{
 footer p{
   font-size: 10px;
 }
+
+#footer-icons {
+  flex: 1 0 20%;
+  text-align: center;
+  margin-left: 13.33%;
+}
+
+#copyright {
+  flex: .5 0 33.33%;
+  text-align: center;
+}
+
+footer #contact-info {
+  flex: .5 0 20%;
+  text-align: right;
+  padding-right: 13.33%;
+}
+
+#footer-icons a{
+  padding: 0;
+  margin: 0 10px;
+  flex: 0 0 5%;
+}
+/* END FOOTER STYLING */
 
 section{
   display: flex;
@@ -112,11 +149,12 @@ section{
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .social-icons a{
-  flex: 33%;
+  margin: 0 20px;
+  flex: 0 0 15%;
 }
 
 .social-icons ul li{
@@ -154,3 +192,6 @@ section{
 
 /* BEGIN CONTACT ME SECTION */
 
+#contact-info {
+  flex: 0 0 100%;
+}
