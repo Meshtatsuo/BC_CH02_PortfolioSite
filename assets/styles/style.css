@@ -8,7 +8,6 @@ body {
   font-family: "Oswald", sans-serif;
 }
 
-
 /* BEGIN HEADER STYLING */
 header {
   background-color: #f0edee;
@@ -57,9 +56,8 @@ nav ul li a {
   text-decoration: none;
 }
 
-nav ul li:hover{
+nav ul li:hover {
   background-color: black;
-
 }
 
 nav a:hover {
@@ -67,58 +65,22 @@ nav a:hover {
 }
 /* END HEADER STYLING */
 
-/* BEGIN FOOTER STYLING */
-footer{
-  background-color: #00adee;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-}
+/* GENERAL PURPOSE STYLINGS */
 
-footer p{
-  font-size: 10px;
-}
-
-#footer-icons {
-  flex: 1 0 20%;
-  text-align: center;
-  margin-left: 13.33%;
-}
-
-#copyright {
-  flex: .5 0 33.33%;
-  text-align: center;
-}
-
-footer #contact-info {
-  flex: .5 0 20%;
-  text-align: right;
-  padding-right: 13.33%;
-}
-
-#footer-icons a{
-  padding: 0;
-  margin: 0 10px;
-  flex: 0 0 5%;
-}
-/* END FOOTER STYLING */
-
-section{
+section {
   display: flex;
   justify-content: center;
   align-items: left;
 }
 
-/* GENERAL PURPOSE CLASSES */
-.section-heading{
+.section-heading {
   flex: 0 0 20%;
   border-right: 5px solid #00adee;
   padding: 5%;
   text-align: right;
 }
 
-.section-content{
+.section-content {
   flex: 1 1 80%;
   padding: 5%;
   display: flex;
@@ -126,24 +88,24 @@ section{
   justify-content: center;
 }
 
-.section-content h3{
+.section-content h3 {
   font-size: 24px;
   line-height: 1.8;
 }
 
-.section-content p{
+.section-content p {
   font-size: 16px;
   line-height: 1.4;
 }
 
-.social-icons{
+.social-icons {
   flex: 1 1 20%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.social-icons ul{
+.social-icons ul {
   flex: 0 1 40%;
   text-decoration: none;
   list-style-type: none;
@@ -152,38 +114,43 @@ section{
   justify-content: center;
 }
 
-.social-icons a{
+.social-icons a {
   margin: 0 20px;
   flex: 0 0 15%;
 }
 
-.social-icons ul li{
+.social-icons ul li {
   text-decoration: none;
   padding: 5%;
   flex: 33%;
 }
 /* BEGIN ABOUT ME SECTION */
 
-
 /* BEGIN PORTFOLIO SECTION */
 
-#portfolio{
-  
+.hover-overlay:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  scale: 110%;
 }
 
-.portfolio-item{
+.showcase-item {
+  flex: 0 0 90%;
+  padding: 5%;
+}
+
+.portfolio-item {
   flex: 0 0 25%;
   padding: 3%;
 }
 
-.portfolio-item-title{
+.portfolio-item-title {
   text-align: center;
   color: #00adee;
   font-size: 18px;
   background-color: black;
 }
 
-.portfolio-item-description{
+.portfolio-item-description {
   color: #f0edee;
   text-align: center;
   font-size: 12px;
@@ -195,3 +162,40 @@ section{
 #contact-info {
   flex: 0 0 100%;
 }
+
+/* BEGIN FOOTER STYLING */
+footer {
+  background-color: #00adee;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+footer p {
+  font-size: 10px;
+}
+
+#footer-icons {
+  flex: 1 0 20%;
+  text-align: center;
+  margin-left: 13.33%;
+}
+
+#copyright {
+  flex: 0.5 0 33.33%;
+  text-align: center;
+}
+
+footer #contact-info {
+  flex: 0.5 0 20%;
+  text-align: right;
+  padding-right: 13.33%;
+}
+
+#footer-icons a {
+  padding: 0;
+  margin: 0 10px;
+  flex: 0 0 5%;
+}
+/* END FOOTER STYLING */
