@@ -17,6 +17,7 @@ header {
   align-items: center;
   position: sticky;
   top: 0;
+  z-index: 9999;
 }
 
 header nav {
@@ -143,27 +144,53 @@ section {
 .showcase-item {
   flex: 0 0 90%;
   padding: 5%;
+  position: relative;
 }
 
 .portfolio-item {
-  flex: 0 0 25%;
+  margin: auto;
+  flex: 0 0 40%;
   padding: 3%;
+  position: relative;
 }
 
-.portfolio-item-title {
+#showcase-text {
+  height: 15%;
+}
+
+#showcase-text h4 {
+  font-size: 36px;
+  line-height: 1.5;
+}
+
+#showcase-text p {
+  font-size: 18px;
+}
+
+.portfolio-item-text {
+  margin: 0;
+  position: absolute;
+  width: 33%;
+  height: 20%;
+  top: 60%;
+  text-align: center;
+  background-color: rgb(0, 0, 0, 0.8);
+}
+
+.portfolio-item-text h4 {
   text-align: center;
   color: #00adee;
   font-size: 18px;
-  background-color: black;
-  padding: 0;
-  margin: 0;
+  height: 50%;
+  line-height: 2;
 }
 
-.portfolio-item-description {
+.portfolio-item-text p {
   color: #f0edee;
   text-align: center;
+  height: 50%;
+  line-height: 1;
   font-size: 12px;
-  background-color: black;
 }
 
 /* BEGIN CONTACT ME SECTION */
