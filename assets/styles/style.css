@@ -22,10 +22,6 @@ header {
   box-shadow: 0 0px 5px grey;
 }
 
-header nav {
-  padding: 5px;
-}
-
 #logo {
   flex: 1 1 49%;
   margin: 0;
@@ -38,8 +34,8 @@ header nav {
 
 header nav {
   flex: 1 1 49%;
+  padding: 5px;
   margin: 0;
-  max-width: 50%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -167,23 +163,20 @@ section {
 }
 
 #showcase-text {
-  height: 15%;
 }
 
 #showcase-text h4 {
-  font-size: 36px;
-  line-height: 1.5;
+  font-size: 28px;
 }
 
 #showcase-text p {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .portfolio-item-text {
-  margin: 0;
+  padding: 2%;
   position: absolute;
   width: 33%;
-  height: 20%;
   top: 60%;
   text-align: center;
   background-color: rgb(0, 0, 0, 0.8);
@@ -192,17 +185,14 @@ section {
 .portfolio-item-text h4 {
   text-align: center;
   color: #00adee;
-  font-size: 18px;
-  height: 50%;
-  line-height: 2;
+  font-size: 14px;
 }
 
 .portfolio-item-text p {
   color: #f0edee;
   text-align: center;
-  height: 50%;
   line-height: 1;
-  font-size: 12px;
+  font-size: 10px;
 }
 
 /* BEGIN CONTACT ME SECTION */
@@ -247,3 +237,97 @@ footer #contact-info {
   flex: 0 0 5%;
 }
 /* END FOOTER STYLING */
+
+/* MEDIA QUERIES FOR SMALLER SCREEN SIZES*/
+@media screen and (max-width: 980px) {
+  .portfolio-item-text h4 {
+    font-size: 10px;
+    line-height: 1.6;
+  }
+
+  .portfolio-item-text p {
+    font-size: 6px;
+  }
+
+  #showcase-text h4 {
+    font-size: 18px;
+  }
+
+  #showcase-text p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #logo {
+    flex: 1 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  #logo img {
+    margin: 0 auto;
+    padding: 0;
+  }
+  header nav {
+    margin: 0;
+    padding: 0;
+    flex: 1 100%;
+  }
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  header nav ul li {
+    margin: 0 5%;
+    padding: 0;
+  }
+  header nav a {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  #logo {
+    margin: 0;
+    padding: 0;
+    flex: 1 100%;
+  }
+
+  #logo img {
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav {
+    margin: 0;
+    padding: 0;
+    flex: 1 100%;
+  }
+  header nav ul li {
+    font-size: 14px;
+  }
+
+  header nav ul li a {
+    margin: 0;
+    padding: 0;
+  }
+
+  #about-me-text h3 {
+    font-size: 16px;
+  }
+
+  #about-me-text p {
+    font-size: 12px;
+  }
+
+  .contact h3 {
+    font-size: 16px;
+  }
+  .contact p {
+    font-size: 12px;
+  }
+}
