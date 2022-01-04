@@ -24,12 +24,12 @@ header {
 
 #logo {
   flex: 1 1 49%;
-  margin: 0;
+  margin: auto;
 }
+
 #logo img {
-  margin-left: 25%;
-  padding: 5px;
-  max-width: 40%;
+  margin: auto 25%;
+  max-width: 70%;
 }
 
 header nav {
@@ -85,6 +85,10 @@ section {
   border-right: 5px solid #00adee;
   padding: 5%;
   text-align: right;
+}
+
+.section-heading h2 {
+  font-size: 48px;
 }
 
 .section-content {
@@ -146,13 +150,17 @@ section {
 /* BEGIN PORTFOLIO SECTION */
 
 .hover-overlay:hover {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #00adee;
 }
 
 .showcase-item {
   flex: 0 0 90%;
   padding: 5%;
   position: relative;
+}
+/* cap image width to 100% */
+.showcase-item img {
+  max-width: 100%;
 }
 
 .portfolio-item {
@@ -162,7 +170,8 @@ section {
   position: relative;
 }
 
-#showcase-text {
+.portfolio-item img {
+  max-width: 100%;
 }
 
 #showcase-text h4 {
@@ -179,20 +188,23 @@ section {
   width: 33%;
   top: 60%;
   text-align: center;
-  background-color: rgb(0, 0, 0, 0.8);
+  background-color: #f0edee;
 }
 
 .portfolio-item-text h4 {
   text-align: center;
   color: #00adee;
   font-size: 14px;
+  letter-spacing: 1.25px;
 }
 
 .portfolio-item-text p {
-  color: #f0edee;
+  color: black;
+  font-weight: bold;
   text-align: center;
   line-height: 1;
   font-size: 10px;
+  letter-spacing: 2px;
 }
 
 /* BEGIN CONTACT ME SECTION */
@@ -211,7 +223,7 @@ footer {
 }
 
 footer p {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 #footer-icons {
@@ -231,15 +243,14 @@ footer #contact-info {
   padding-right: 13.33%;
 }
 
-#footer-icons a {
-  padding: 0;
-  margin: 0 10px;
-  flex: 0 0 5%;
-}
 /* END FOOTER STYLING */
 
 /* MEDIA QUERIES FOR SMALLER SCREEN SIZES*/
 @media screen and (max-width: 980px) {
+  .section-heading h2 {
+    font-size: 36px;
+  }
+
   .portfolio-item-text h4 {
     font-size: 10px;
     line-height: 1.6;
@@ -260,7 +271,7 @@ footer #contact-info {
 
 @media screen and (max-width: 768px) {
   #logo {
-    flex: 1 100%;
+    flex: 0 0 100%;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -288,6 +299,10 @@ footer #contact-info {
     padding: 0;
     font-size: 14px;
   }
+
+  .section-heading h2 {
+    font-size: 28px;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -314,6 +329,10 @@ footer #contact-info {
   header nav ul li a {
     margin: 0;
     padding: 0;
+  }
+
+  .section-heading h2 {
+    font-size: 24px;
   }
 
   #about-me-text h3 {
