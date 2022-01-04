@@ -249,23 +249,31 @@ footer #contact-info {
 @media screen and (max-width: 980px) {
   .section-heading h2 {
     font-size: 36px;
+    letter-spacing: normal;
   }
 
   .portfolio-item-text h4 {
     font-size: 10px;
+
+    letter-spacing: normal;
     line-height: 1.6;
   }
 
   .portfolio-item-text p {
     font-size: 6px;
+
+    letter-spacing: normal;
   }
 
   #showcase-text h4 {
-    font-size: 18px;
+    font-size: 14px;
+    letter-spacing: normal;
   }
 
   #showcase-text p {
-    font-size: 14px;
+    font-size: 10px;
+
+    letter-spacing: normal;
   }
 }
 
@@ -302,6 +310,15 @@ footer #contact-info {
 
   .section-heading h2 {
     font-size: 28px;
+  }
+
+  .section-heading h2 {
+    font-size: 36px;
+    letter-spacing: normal;
+  }
+
+  .portfolio-item {
+    flex: 1 1 100%;
   }
 }
 
