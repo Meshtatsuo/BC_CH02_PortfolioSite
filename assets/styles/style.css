@@ -278,6 +278,7 @@ footer #contact-info {
 
   #profile-image {
     flex: 0 0 100%;
+    max-width: 50%;
     margin: auto;
   }
 
