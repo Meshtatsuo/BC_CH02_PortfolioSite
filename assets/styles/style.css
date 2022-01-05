@@ -147,6 +147,22 @@ section {
   height: auto;
 }
 
+/* BEGIN ABOUT ME SECTION */
+
+#profile-image {
+  flex: 0 0 40%;
+  margin: auto;
+}
+
+#profile-image img {
+  max-width: 100%;
+  box-shadow: 0 1px 12px black;
+}
+
+#about-me-text {
+  flex: 0 0 40%;
+}
+
 /* BEGIN PORTFOLIO SECTION */
 
 .hover-overlay:hover {
@@ -250,6 +266,15 @@ footer #contact-info {
   .section-heading h2 {
     font-size: 36px;
     letter-spacing: normal;
+  }
+
+  #profile-image {
+    flex: 0 0 100%;
+    margin: auto;
+  }
+
+  #about-me-text {
+    flex: 0 0 100%;
   }
 
   .portfolio-item-text h4 {
