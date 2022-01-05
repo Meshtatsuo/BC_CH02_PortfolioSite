@@ -156,11 +156,19 @@ section {
 
 #profile-image img {
   max-width: 100%;
-  box-shadow: 0 1px 12px black;
+  box-shadow: 0 1px 3px black;
 }
 
 #about-me-text {
   flex: 0 0 40%;
+}
+
+#about-me-text h3 {
+  margin: 15px 0;
+}
+
+#about-me-text ul {
+  padding: 20px;
 }
 
 /* BEGIN PORTFOLIO SECTION */
