@@ -142,6 +142,9 @@ section {
   max-width: 50%;
 }
 /* BEGIN HERO SECTION */
+#hero {
+  margin: 0;
+}
 
 #hero img {
   max-width: 100%;
