@@ -77,10 +77,10 @@ nav a:hover {
 section {
   display: flex;
   justify-content: center;
-  align-items: left;
   margin: 5% 0;
 }
 
+/* General stylings for Section headings */
 .section-heading {
   flex: 0 0 20%;
   border-right: 5px solid #00adee;
@@ -92,6 +92,7 @@ section {
   font-size: 48px;
 }
 
+/* General stylings for section content */
 .section-content {
   flex: 1 1 80%;
   padding: 5%;
@@ -110,6 +111,7 @@ section {
   line-height: 1.4;
 }
 
+/* Stylings for the social icons in case I use them elsewhere on the page */
 .social-icons {
   flex: 1 1 40%;
   padding: 0 5%;
@@ -141,27 +143,40 @@ section {
 .social-icons img {
   max-width: 50%;
 }
+
 /* BEGIN HERO SECTION */
 #hero {
   margin: 0;
+  position: relative;
 }
 
 #hero img {
   max-width: 100%;
   height: auto;
-  position: relative;
 }
-
-#hero h2 {
+/* Originally text was part of hero image, but
+    we were required to have a subtitle text based on the
+    mockup, so I recreated the text on the image in html/css
+    to match the subtitle requirement for the mockup.  I used
+    vw units for font-size in order for it to scale as it would
+    had the text been part of the image.
+  */
+#hero-text {
   position: absolute;
-  top: 40%;
-  left: 85%;
-  font-size: 36px;
+  margin: auto;
+  overflow: auto;
+  top: 25%;
+  left: 60%;
+
+  font-size: 1.5vw;
+  font-weight: bolder;
   color: white;
+}
+#hero-text span {
+  color: #00adee;
 }
 
 /* BEGIN ABOUT ME SECTION */
-
 #profile-image {
   flex: 0 0 40%;
   margin: auto;
@@ -185,7 +200,6 @@ section {
 }
 
 /* BEGIN PORTFOLIO SECTION */
-
 .hover-overlay:hover {
   background-color: #00adee;
 }
@@ -280,8 +294,6 @@ footer #contact-info {
   padding-right: 13.33%;
 }
 
-/* END FOOTER STYLING */
-
 /* MEDIA QUERIES FOR SMALLER SCREEN SIZES*/
 @media screen and (max-width: 1200px) {
   .section-heading h2 {
@@ -301,14 +313,12 @@ footer #contact-info {
 
   .portfolio-item-text h4 {
     font-size: 10px;
-
     letter-spacing: normal;
     line-height: 1.6;
   }
 
   .portfolio-item-text p {
     font-size: 6px;
-
     letter-spacing: normal;
   }
 
@@ -319,7 +329,6 @@ footer #contact-info {
 
   #showcase-text p {
     font-size: 10px;
-
     letter-spacing: normal;
   }
 }
