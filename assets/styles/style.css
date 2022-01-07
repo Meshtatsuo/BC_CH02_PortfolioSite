@@ -271,7 +271,7 @@ footer #contact-info {
 /* END FOOTER STYLING */
 
 /* MEDIA QUERIES FOR SMALLER SCREEN SIZES*/
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1200px) {
   .section-heading h2 {
     font-size: 36px;
     letter-spacing: normal;
@@ -313,6 +313,11 @@ footer #contact-info {
 }
 
 @media screen and (max-width: 768px) {
+  header {
+    margin: 0 auto;
+    width: 100%;
+  }
+
   #logo {
     flex: 0 0 100%;
     margin: 0;
@@ -345,6 +350,7 @@ footer #contact-info {
 
   section {
     flex-wrap: wrap;
+    margin: 0 auto;
   }
 
   .section-heading {
@@ -358,6 +364,7 @@ footer #contact-info {
   .section-heading h2 {
     text-align: left;
     font-size: 28px;
+    margin-left: 3%;
   }
 
   .section-heading h2 {
@@ -366,7 +373,7 @@ footer #contact-info {
   }
 
   .section-content {
-    flex: 0 0 100%;
+    flex: 0 1 100%;
   }
 
   .portfolio-item {
