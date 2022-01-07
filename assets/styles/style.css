@@ -376,6 +376,13 @@ footer #contact-info {
     flex: 0 1 100%;
   }
 
+  .showcase-item h4 {
+    font-size: 14px;
+  }
+
+  .showcase-item p {
+    font-size: 10px;
+  }
   .portfolio-item {
     flex: 1 1 100%;
   }
@@ -424,5 +431,11 @@ footer #contact-info {
   }
   .contact p {
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #showcase-text {
+    top: 50%;
   }
 }
