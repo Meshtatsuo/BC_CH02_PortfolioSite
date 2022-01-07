@@ -404,9 +404,17 @@ footer #contact-info {
   .showcase-item p {
     font-size: 10px;
   }
+
   .portfolio-item {
     flex: 1 1 100%;
   }
+
+  .portfolio-item h4{
+    font-size: 14px;
+}
+
+.portfolio-item p{
+  font-size: 10px;
 }
 
 @media screen and (max-width: 575px) {
