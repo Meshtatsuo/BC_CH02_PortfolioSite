@@ -78,12 +78,13 @@ section {
   display: flex;
   justify-content: center;
   align-items: left;
+  margin: 5% 0;
 }
 
 .section-heading {
   flex: 0 0 20%;
   border-right: 5px solid #00adee;
-  padding: 5%;
+  padding: 2%;
   text-align: right;
 }
 
@@ -342,13 +343,30 @@ footer #contact-info {
     font-size: 14px;
   }
 
+  section {
+    flex-wrap: wrap;
+  }
+
+  .section-heading {
+    margin: 0;
+    padding: 0;
+    flex: 0 0 99%;
+    border-right: none;
+    border-bottom: 3px solid #00adee;
+  }
+
   .section-heading h2 {
+    text-align: left;
     font-size: 28px;
   }
 
   .section-heading h2 {
     font-size: 36px;
     letter-spacing: normal;
+  }
+
+  .section-content {
+    flex: 0 0 100%;
   }
 
   .portfolio-item {
