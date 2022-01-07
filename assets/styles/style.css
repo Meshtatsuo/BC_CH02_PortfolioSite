@@ -149,6 +149,15 @@ section {
 #hero img {
   max-width: 100%;
   height: auto;
+  position: relative;
+}
+
+#hero h2 {
+  position: absolute;
+  top: 40%;
+  left: 85%;
+  font-size: 36px;
+  color: white;
 }
 
 /* BEGIN ABOUT ME SECTION */
