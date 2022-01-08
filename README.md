@@ -1,5 +1,7 @@
 # Single Page Portfolio Website
 
+Deployed Application: https://meshtatsuo.github.io/BC_CH02_PortfolioSite/
+
 ## Overview
 
 A basic one-page website designed to showcase my work and abilities to potential employers.
