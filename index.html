@@ -1,266 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Dominic Misasi</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
 
-    <!-- Favicon -->
-    <link
-      rel="icon"
-      href="./assets/images/AudioBullGraphicBlackWhite.png"
-      type="image/x-icon"
-    />
+<head>
+  <title>Dominic Misasi</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
 
-    <!--Link Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- BEGIN HEADER SECTION-->
-    <header>
-      <div id="logo">
-        <a href="index.html">
-          <img
-            src="./assets/images/AudioBullWordmark.png"
-            alt="audiobull logo"
-          />
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/images/AudioBullGraphicBlackWhite.png" type="image/x-icon" />
+
+  <!--Link Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- BEGIN HEADER SECTION-->
+  <header>
+    <div id="logo">
+      <a href="index.html">
+        <img src="./assets/images/AudioBullWordmark.png" alt="audiobull logo" />
+      </a>
+    </div>
+    <nav>
+      <ul>
+        <a href="#about-me">
+          <li>ABOUT ME</li>
+        </a>
+        <a href="#portfolio">
+          <li>PORTFOLIO</li>
+        </a>
+        <a href="#contact">
+          <li>CONTACT ME</li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+  <!-- END HEADER SECTION  -->
+
+  <!-- BEGIN  HERO SECTION -->
+  <section id="hero">
+    <img src="assets/images/HeroBanner.png" alt="" />
+    <div id="hero-text">
+      <h2><span class="blue-text">FULL STACK</span> DEVELOPMENT</h2>
+      <h2>AUDIO <span class="blue-text">PROGRAMMING</span></h2>
+      <h2><span class="blue-text">GAME AUDIO </span>IMPLEMENTATION</h2>
+    </div>
+  </section>
+  <!-- END HERO SECTION -->
+
+  <!---BEGIN ABOUT ME SECTION -->
+  <section id="about-me">
+    <div class="section-heading">
+      <h2>About Me</h2>
+    </div>
+
+    <div class="section-content">
+      <div id="profile-image">
+        <img src="assets/images/profile-pic.jpg" alt="profile photo of Dominic Misasi" />
+      </div>
+      <div id="about-me-text">
+        <h3>About Me</h3>
+        <p>
+          After graduating college in 2016, I worked various odd jobs while
+          freelancing as an audio engineer on the side. Over time my duties on
+          my freelance audio work began drifting more and more into the game
+          audio field and the implementation aspect of sounds in games. Ever
+          since, I've designed various audio systems for many projects
+          including:
+        </p>
+        <ul>
+          <li>
+            A custom real time breathing system for non player characters that
+            adjusts a character's breathing based on external monitoring
+            systems
+          </li>
+          <li>
+            A dynamic weather system including real time weather patterns and
+            seamless transitions between weather types.
+          </li>
+          <li>
+            A radio audio system that generates and modulates static between
+            stations in real time
+          </li>
+        </ul>
+        <p>
+          My interest in the back end of audio development would lead me down
+          the path to full stack development as a more stable career to pursue
+          while continuing my audio work on the side.
+        </p>
+        <h3>My Work</h3>
+        <p>
+          Currently you will find some work for both audio development and
+          full stack development in my portfolio, but this will shift towards
+          a heavy emphasis into full stack development as I develop more
+          portfolio items.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- END ABOUT ME SECTION -->
+
+  <!-- BEGIN PORTFOLIO SECTION -->
+  <section id="portfolio">
+    <div class="section-heading">
+      <h2>My Portfolio</h2>
+    </div>
+
+    <div class="section-content">
+      <!-- SHOWCASE piece. This does not share a row with other items!-->
+      <div class="showcase-item">
+        <a href="https://vimeo.com/manage/videos/662102223" target="_blank">
+          <div class="hover-overlay">
+            <img src="./assets/images/portfolio-items/thx-ue5.png" alt="thx portfolio thumbnail" />
+          </div>
+          <div class="portfolio-item-text" id="showcase-text">
+            <h4>THX Deep Note Recreation</h4>
+            <p>Unreal Engine 5</p>
+          </div>
         </a>
       </div>
-      <nav>
+
+      <!--Portfolio pieces open all links in new tabs-->
+
+      <!--Portfolio piece 1-->
+      <div class="portfolio-item">
+        <a href="https://meshtatsuo.github.io/Run_Buddy_Landing/" target="_blank">
+          <div class="hover-overlay">
+            <img src="./assets/images/portfolio-items/runbuddy.png" alt="run buddy portfolio thumbnail" />
+          </div>
+          <div class="portfolio-item-text">
+            <h4>Run Buddy Landing</h4>
+            <p>HTML | CSS</p>
+          </div>
+        </a>
+      </div>
+      <!--Portfolio piece 2-->
+      <div class="portfolio-item">
+        <a href="https://nitrotap.github.io/mental-health-check/" target="_blank">
+          <div class="hover-overlay">
+            <img src="./assets/images/portfolio-items/runbuddy.png" alt="Avalanche python tracker thumbnail" />
+          </div>
+          <div class="portfolio-item-text">
+            <h4>Mental Health Check</h4>
+            <p>HTML | CSS | JS</p>
+          </div>
+        </a>
+      </div>
+      <!--Portfolio piece 3-->
+      <div class="portfolio-item">
+        <a href="https://fomo-photo-reviewer.herokuapp.com/" target="_blank">
+          <div class="hover-overlay">
+            <img src="./assets/images/portfolio-items/PI_PhotoReviewer.jpg" alt="placeholder portfolio item image" />
+          </div>
+          <div class="portfolio-item-text">
+            <h4>Photo Reviewer</h4>
+            <p>NodeJS | ExpressJS | Sequelize | AWS</p>
+          </div>
+        </a>
+      </div>
+      <!--Portfolio piece 4-->
+      <div class="portfolio-item">
+        <a href="https://youtu.be/AxyzpcBdiik" target="_blank">
+          <div class="hover-overlay">
+            <img src="./assets/images/portfolio-items/ue4-weather.png" alt="placeholder portfolio item image" />
+          </div>
+          <div class="portfolio-item-text">
+            <h4>Dynamic Weather</h4>
+            <p>Unreal Engine 4</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- END PORTFOLIO SECTION -->
+
+  <!-- BEGIN CONTACT SECTION -->
+  <section id="contact">
+    <div class="section-heading">
+      <h2>Contact Me</h2>
+    </div>
+
+    <div class="section-content">
+      <!--Social icon group using font-awesome icons-->
+      <div class="social-icons">
         <ul>
-          <a href="#about-me"><li>ABOUT ME</li></a>
-          <a href="#portfolio"><li>PORTFOLIO</li></a>
-          <a href="#contact"><li>CONTACT ME</li></a>
+          <a href="https://www.twitter.com" target="_blank">
+            <li>
+              <img src="assets/images/font-awesome-icons/twitter.svg" alt="twitter icon" /></li>
+          </a>
+          <a href="https://www.linkedin.com" target="_blank">
+            <li>
+              <img src="assets/images/font-awesome-icons/linkedin.svg" alt="linked in icon" /></li>
+          </a>
+          <a href="https://www.github.com" target="_blank">
+            <li>
+              <img src="assets/images/font-awesome-icons/github.svg" alt="github icon" /></li>
+          </a>
         </ul>
-      </nav>
-    </header>
-    <!-- END HEADER SECTION  -->
-
-    <!-- BEGIN  HERO SECTION -->
-    <section id="hero">
-      <img src="assets/images/HeroBanner.png" alt="" />
-      <div id="hero-text">
-        <h2><span class="blue-text">FULL STACK</span> DEVELOPMENT</h2>
-        <h2>AUDIO <span class="blue-text">PROGRAMMING</span></h2>
-        <h2><span class="blue-text">GAME AUDIO </span>IMPLEMENTATION</h2>
       </div>
-    </section>
-    <!-- END HERO SECTION -->
-
-    <!---BEGIN ABOUT ME SECTION -->
-    <section id="about-me">
-      <div class="section-heading">
-        <h2>About Me</h2>
-      </div>
-
-      <div class="section-content">
-        <div id="profile-image">
-          <img
-            src="assets/images/profile-pic.jpg"
-            alt="profile photo of Dominic Misasi"
-          />
-        </div>
-        <div id="about-me-text">
-          <h3>About Me</h3>
-          <p>
-            After graduating college in 2016, I worked various odd jobs while
-            freelancing as an audio engineer on the side. Over time my duties on
-            my freelance audio work began drifting more and more into the game
-            audio field and the implementation aspect of sounds in games. Ever
-            since, I've designed various audio systems for many projects
-            including:
-          </p>
-          <ul>
-            <li>
-              A custom real time breathing system for non player characters that
-              adjusts a character's breathing based on external monitoring
-              systems
-            </li>
-            <li>
-              A dynamic weather system including real time weather patterns and
-              seamless transitions between weather types.
-            </li>
-            <li>
-              A radio audio system that generates and modulates static between
-              stations in real time
-            </li>
-          </ul>
-          <p>
-            My interest in the back end of audio development would lead me down
-            the path to full stack development as a more stable career to pursue
-            while continuing my audio work on the side.
-          </p>
-          <h3>My Work</h3>
-          <p>
-            Currently you will find some work for both audio development and
-            full stack development in my portfolio, but this will shift towards
-            a heavy emphasis into full stack development as I develop more
-            portfolio items.
-          </p>
-        </div>
-      </div>
-    </section>
-    <!-- END ABOUT ME SECTION -->
-
-    <!-- BEGIN PORTFOLIO SECTION -->
-    <section id="portfolio">
-      <div class="section-heading">
-        <h2>My Portfolio</h2>
-      </div>
-
-      <div class="section-content">
-        <!-- SHOWCASE piece. This does not share a row with other items!-->
-        <div class="showcase-item">
-          <a href="https://vimeo.com/manage/videos/662102223" target="_blank">
-            <div class="hover-overlay">
-              <img
-                src="./assets/images/portfolio-items/thx-ue5.png"
-                alt="thx portfolio thumbnail"
-              />
-            </div>
-            <div class="portfolio-item-text" id="showcase-text">
-              <h4>THX Deep Note Recreation</h4>
-              <p>Unreal Engine 5</p>
-            </div>
-          </a>
-        </div>
-
-        <!--Portfolio pieces open all links in new tabs-->
-
-        <!--Portfolio piece 1-->
-        <div class="portfolio-item">
-          <a
-            href="https://meshtatsuo.github.io/Run_Buddy_Landing/"
-            target="_blank"
-          >
-            <div class="hover-overlay">
-              <img
-                src="./assets/images/portfolio-items/runbuddy.png"
-                alt="run buddy portfolio thumbnail"
-              />
-            </div>
-            <div class="portfolio-item-text">
-              <h4>Run Buddy Landing</h4>
-              <p>HTML | CSS</p>
-            </div>
-          </a>
-        </div>
-        <!--Portfolio piece 2-->
-        <div class="portfolio-item">
-          <a
-            href="https://nitrotap.github.io/mental-health-check/"
-            target="_blank"
-          >
-            <div class="hover-overlay">
-              <img
-                src="./assets/images/portfolio-items/runbuddy.png"
-                alt="Avalanche python tracker thumbnail"
-              />
-            </div>
-            <div class="portfolio-item-text">
-              <h4>Mental Health Check</h4>
-              <p>HTML / CSS / JS</p>
-            </div>
-          </a>
-        </div>
-        <!--Portfolio piece 3-->
-        <div class="portfolio-item">
-          <a href="https://youtu.be/3d1VIHLNViM" target="_blank">
-            <div class="hover-overlay">
-              <img
-                src="./assets/images/portfolio-items/ue4-radio.png"
-                alt="placeholder portfolio item image"
-              />
-            </div>
-            <div class="portfolio-item-text">
-              <h4>Dynamic Radio</h4>
-              <p>Unreal Engine 4</p>
-            </div>
-          </a>
-        </div>
-        <!--Portfolio piece 4-->
-        <div class="portfolio-item">
-          <a href="https://youtu.be/AxyzpcBdiik" target="_blank">
-            <div class="hover-overlay">
-              <img
-                src="./assets/images/portfolio-items/ue4-weather.png"
-                alt="placeholder portfolio item image"
-              />
-            </div>
-            <div class="portfolio-item-text">
-              <h4>Dynamic Weather</h4>
-              <p>Unreal Engine 4</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-    <!-- END PORTFOLIO SECTION -->
-
-    <!-- BEGIN CONTACT SECTION -->
-    <section id="contact">
-      <div class="section-heading">
-        <h2>Contact Me</h2>
-      </div>
-
-      <div class="section-content">
-        <!--Social icon group using font-awesome icons-->
-        <div class="social-icons">
-          <ul>
-            <a href="https://www.twitter.com" target="_blank"
-              ><li>
-                <img
-                  src="assets/images/font-awesome-icons/twitter.svg"
-                  alt="twitter icon"
-                /></li
-            ></a>
-            <a href="https://www.linkedin.com" target="_blank"
-              ><li>
-                <img
-                  src="assets/images/font-awesome-icons/linkedin.svg"
-                  alt="linked in icon"
-                /></li
-            ></a>
-            <a href="https://www.github.com" target="_blank"
-              ><li>
-                <img
-                  src="assets/images/font-awesome-icons/github.svg"
-                  alt="github icon"
-                /></li
-            ></a>
-          </ul>
-        </div>
-        <!--using fake info for placeholder-->
-        <div id="contact-info">
-          <h3>Reach out!</h3>
-          <p><span>Phone: </span>(555)-555-5555</p>
-          <p>
-            <span>Email: </span
-            ><a href="mailto: thisisan@example.only">thisisan@example.only</a>
-          </p>
-          <address>1016 W Addison Chicago, IL</address>
-        </div>
-      </div>
-    </section>
-    <!-- END CONTACT SECTION -->
-    <!--BEGIN FOOTER SECTION-->
-    <footer>
-      <div id="copyright">
-        <p>&copy; Dominic Misasi. All Rights Reserved.</p>
-      </div>
-
+      <!--using fake info for placeholder-->
       <div id="contact-info">
+        <h3>Reach out!</h3>
         <p><span>Phone: </span>(555)-555-5555</p>
-        <p><span>Email: </span>thisisan@example.only</p>
+        <p>
+          <span>Email: </span><a href="mailto: thisisan@example.only">thisisan@example.only</a>
+        </p>
         <address>1016 W Addison Chicago, IL</address>
       </div>
-    </footer>
-    <!--- END FOOTER SECTION-->
-  </body>
+    </div>
+  </section>
+  <!-- END CONTACT SECTION -->
+  <!--BEGIN FOOTER SECTION-->
+  <footer>
+    <div id="copyright">
+      <p>&copy; Dominic Misasi. All Rights Reserved.</p>
+    </div>
+
+    <div id="contact-info">
+      <p><span>Phone: </span>(555)-555-5555</p>
+      <p><span>Email: </span>thisisan@example.only</p>
+      <address>1016 W Addison Chicago, IL</address>
+    </div>
+  </footer>
+  <!--- END FOOTER SECTION-->
+</body>
+
 </html>
