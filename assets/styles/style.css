@@ -22,6 +22,11 @@ header {
   box-shadow: 0 0px 5px grey;
 }
 
+a {
+  text-decoration: none;
+}
+
+
 #logo {
   flex: 1 1 49%;
   margin: auto;
@@ -70,6 +75,7 @@ nav ul a {
 nav a:hover {
   color: #00adee;
 }
+
 /* END HEADER STYLING */
 
 /* GENERAL PURPOSE STYLINGS */
@@ -144,6 +150,11 @@ section {
   max-width: 50%;
 }
 
+#contact-email {
+  font-size: 24px;
+  color: #00adee;
+}
+
 /* BEGIN HERO SECTION */
 #hero {
   margin: 0;
@@ -154,6 +165,7 @@ section {
   max-width: 100%;
   height: auto;
 }
+
 /* Originally text was part of hero image, but
     we were required to have a subtitle text based on the
     mockup, so I recreated the text on the image in html/css
@@ -172,6 +184,7 @@ section {
   font-weight: bolder;
   color: white;
 }
+
 #hero-text span {
   color: #00adee;
 }
@@ -209,6 +222,7 @@ section {
   padding: 5%;
   position: relative;
 }
+
 /* cap image width to 100% */
 .showcase-item img {
   max-width: 100%;
@@ -266,7 +280,9 @@ section {
 
 /* BEGIN FOOTER STYLING */
 footer {
+  padding: 1%;
   background-color: #00adee;
+  color: white;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -275,6 +291,11 @@ footer {
 
 footer p {
   font-size: 12px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
 }
 
 #footer-icons {
@@ -345,24 +366,29 @@ footer #contact-info {
     padding: 0;
     text-align: center;
   }
+
   #logo img {
     margin: 0 auto;
     padding: 0;
   }
+
   header nav {
     margin: 0;
     padding: 0;
     flex: 1 100%;
   }
+
   header nav ul {
     margin: 0;
     padding: 0;
     text-align: center;
   }
+
   header nav ul li {
     margin: 0 5%;
     padding: 0;
   }
+
   header nav a {
     margin: 0;
     padding: 0;
@@ -409,62 +435,64 @@ footer #contact-info {
     flex: 1 1 100%;
   }
 
-  .portfolio-item h4{
-    font-size: 14px;
-}
-
-.portfolio-item p{
-  font-size: 10px;
-}
-
-@media screen and (max-width: 575px) {
-  #logo {
-    margin: 0;
-    padding: 0;
-    flex: 1 100%;
-  }
-
-  #logo img {
-    margin: 0;
-    padding: 0;
-  }
-
-  header nav {
-    margin: 0;
-    padding: 0;
-    flex: 1 100%;
-  }
-  header nav ul li {
+  .portfolio-item h4 {
     font-size: 14px;
   }
 
-  header nav ul li a {
-    margin: 0;
-    padding: 0;
+  .portfolio-item p {
+    font-size: 10px;
   }
 
-  .section-heading h2 {
-    font-size: 24px;
+  @media screen and (max-width: 575px) {
+    #logo {
+      margin: 0;
+      padding: 0;
+      flex: 1 100%;
+    }
+
+    #logo img {
+      margin: 0;
+      padding: 0;
+    }
+
+    header nav {
+      margin: 0;
+      padding: 0;
+      flex: 1 100%;
+    }
+
+    header nav ul li {
+      font-size: 14px;
+    }
+
+    header nav ul li a {
+      margin: 0;
+      padding: 0;
+    }
+
+    .section-heading h2 {
+      font-size: 24px;
+    }
+
+    #about-me-text h3 {
+      font-size: 16px;
+    }
+
+    #about-me-text p {
+      font-size: 12px;
+    }
+
+    .contact h3 {
+      font-size: 16px;
+    }
+
+    .contact p {
+      font-size: 12px;
+    }
   }
 
-  #about-me-text h3 {
-    font-size: 16px;
+  @media screen and (max-width: 450px) {
+    #showcase-text {
+      top: 50%;
+    }
   }
-
-  #about-me-text p {
-    font-size: 12px;
-  }
-
-  .contact h3 {
-    font-size: 16px;
-  }
-  .contact p {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 450px) {
-  #showcase-text {
-    top: 50%;
-  }
-}
