@@ -1,3 +1,8 @@
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,10 +11,15 @@
 body {
   background-color: #f0edee;
   font-family: "Oswald", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-bottom: 0;
+  min-height: 100%;
 }
 
 /* BEGIN HEADER STYLING */
 header {
+  padding: 5px 15%;
   background-color: #f0edee;
   display: flex;
   justify-content: space-evenly;
@@ -26,29 +36,26 @@ a {
   text-decoration: none;
 }
 
-
 #logo {
-  flex: 1 1 49%;
-  margin: auto;
+  flex: 1 1 30%;
 }
 
 #logo img {
-  margin: auto 25%;
-  max-width: 70%;
+  margin: 0;
+  max-width: 100%;
 }
 
 header nav {
   flex: 1 1 49%;
-  padding: 5px;
   margin: 0;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 header nav ul {
-  margin: 2% 25% 2% 0;
-  margin-right: 25%;
+  margin: 2% 0;
   padding: 0;
   width: 100%;
   text-align: right;
@@ -57,16 +64,16 @@ header nav ul {
 nav ul li {
   display: inline;
   flex: 0 0 30%;
-  padding: 5%;
+  padding: 5% 8%;
 }
 
 /* Subtle color change on text when hovered */
 nav ul li:hover {
-  color: #11beff;
+  color: #00adee;
 }
 
 nav ul a {
-  color: #00adee;
+  color: black;
   font-weight: bold;
   font-size: 1.25vw;
   text-decoration: none;
@@ -81,17 +88,16 @@ nav a:hover {
 /* GENERAL PURPOSE STYLINGS */
 
 section {
-  display: flex;
   justify-content: center;
-  margin: 5% 0;
+  margin: 0 auto;
 }
 
 /* General stylings for Section headings */
 .section-heading {
-  flex: 0 0 20%;
-  border-right: 5px solid #00adee;
+  margin: 0 13%;
+  border-bottom: 5px solid #00adee;
   padding: 2%;
-  text-align: right;
+  text-align: left;
 }
 
 .section-heading h2 {
@@ -100,11 +106,12 @@ section {
 
 /* General stylings for section content */
 .section-content {
-  flex: 1 1 80%;
-  padding: 5%;
+  margin: 0 13%;
+  margin-bottom: 2%;
+  padding: 2%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .section-content h3 {
@@ -119,7 +126,7 @@ section {
 
 /* Stylings for the social icons in case I use them elsewhere on the page */
 .social-icons {
-  flex: 1 1 40%;
+  flex: 1 1 25%;
   padding: 0 5%;
   margin: auto;
   flex-wrap: wrap;
@@ -128,7 +135,7 @@ section {
 }
 
 .social-icons ul {
-  flex: 0 0 50%;
+  flex: 0 0 25%;
   text-decoration: none;
   list-style-type: none;
   display: flex;
@@ -147,7 +154,7 @@ section {
 }
 
 .social-icons img {
-  max-width: 50%;
+  max-width: 25%;
 }
 
 #contact-email {
@@ -157,7 +164,8 @@ section {
 
 /* BEGIN HERO SECTION */
 #hero {
-  margin: 0;
+  margin: 0 auto;
+  width: 100%;
   position: relative;
 }
 
@@ -166,21 +174,17 @@ section {
   height: auto;
 }
 
-/* Originally text was part of hero image, but
-    we were required to have a subtitle text based on the
-    mockup, so I recreated the text on the image in html/css
-    to match the subtitle requirement for the mockup.  I used
-    vw units for font-size in order for it to scale as it would
-    had the text been part of the image.
-  */
+.hero-name {
+  font-size: 5vw;
+}
 #hero-text {
   position: absolute;
   margin: auto;
   overflow: auto;
   top: 25%;
   left: 60%;
-
-  font-size: 1.5vw;
+  text-align: right;
+  font-size: 2vw;
   font-weight: bolder;
   color: white;
 }
@@ -189,9 +193,11 @@ section {
   color: #00adee;
 }
 
+/* BEGIN HOME SECTION */
+
 /* BEGIN ABOUT ME SECTION */
 #profile-image {
-  flex: 0 0 40%;
+  flex: 0 1 28%;
   margin: auto;
 }
 
@@ -201,15 +207,27 @@ section {
 }
 
 #about-me-text {
-  flex: 0 0 40%;
+  flex: 0 0 50%;
+  font-size: 20px;
+}
+
+#about-me-text p {
+  font-size: 22px;
+}
+
+#resume-link {
+  text-decoration: none;
+  color: #008bcc;
+  font-size: 20px;
 }
 
 #about-me-text h3 {
   margin: 15px 0;
+  font-size: 28px;
 }
 
 #about-me-text ul {
-  padding: 20px;
+  padding: 22px;
 }
 
 /* BEGIN PORTFOLIO SECTION */
@@ -259,7 +277,7 @@ section {
 .portfolio-item-text h4 {
   text-align: center;
   color: #00adee;
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 1.25px;
 }
 
@@ -268,40 +286,114 @@ section {
   font-weight: bold;
   text-align: center;
   line-height: 1;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 2px;
 }
 
 /* BEGIN CONTACT ME SECTION */
+#contact-me {
+  display: flex;
+}
+#contact-text {
+  flex: 1 100%;
+  margin: 1%;
+}
 
-#contact-info {
-  flex: 0 0 50%;
+#contact-text h3 {
+  font-size: 26px;
+}
+
+#contact-text p {
+  font-size: 20px;
+}
+
+#contact-form {
+  margin: auto 0;
+  padding: 0;
+  flex: 0 0 45%;
+}
+
+#contact-form div {
+  margin: 5%;
+  text-align: left;
+  display: flex;
+}
+
+#contact-form label {
+  font-size: 20px;
+}
+
+#contact-form input {
+  margin-left: auto;
+  padding: 1%;
+  font-size: 16px;
+  width: 60%;
+  border-radius: 6px;
+  flex: 0 0 75%;
+}
+
+#contact-form textarea {
+  margin-left: auto;
+  padding: 1%;
+  font-size: 16px;
+  width: 60%;
+  border-radius: 10px;
+  flex: 0 0 75%;
+}
+
+#contact-error-text {
+  color: red;
+  font-size: 20px;
+  margin: auto;
+}
+
+#contact-form button {
+  padding: 1% 2%;
+  font-size: 20px;
+  border-radius: 10px;
+  margin-left: 75%;
+  width: 20%;
+}
+
+#contact-socials {
+  margin: auto;
+  text-align: center;
+  padding: 0;
+  flex: 0 0 45%;
+}
+
+#contact-socials h3 {
+  margin: 6%;
 }
 
 /* BEGIN FOOTER STYLING */
 footer {
   padding: 1%;
-  background-color: #00adee;
-  color: white;
+  margin: auto;
+  margin-bottom: 0px;
+  background-color: #f0edee;
+  color: black;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
+  box-shadow: 0 0px 5px grey;
 }
 
 footer p {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 footer a {
   text-decoration: none;
-  color: white;
+  color: black;
+  font-size: 16px;
 }
 
 #footer-icons {
+  margin: auto 0;
   flex: 1 0 20%;
   text-align: center;
-  margin-left: 13.33%;
 }
 
 #copyright {
@@ -352,12 +444,19 @@ footer #contact-info {
     font-size: 10px;
     letter-spacing: normal;
   }
+
+  #contact-text h3 {
+    font-size: 20px;
+  }
+
+  #contact-text p {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   header {
     margin: 0 auto;
-    width: 100%;
   }
 
   #logo {
@@ -411,7 +510,8 @@ footer #contact-info {
   .section-heading h2 {
     text-align: left;
     font-size: 28px;
-    margin-left: 3%;
+    padding: 1% 0;
+    text-align: center;
   }
 
   .section-heading h2 {
@@ -443,56 +543,101 @@ footer #contact-info {
     font-size: 10px;
   }
 
-  @media screen and (max-width: 575px) {
-    #logo {
-      margin: 0;
-      padding: 0;
-      flex: 1 100%;
-    }
-
-    #logo img {
-      margin: 0;
-      padding: 0;
-    }
-
-    header nav {
-      margin: 0;
-      padding: 0;
-      flex: 1 100%;
-    }
-
-    header nav ul li {
-      font-size: 14px;
-    }
-
-    header nav ul li a {
-      margin: 0;
-      padding: 0;
-    }
-
-    .section-heading h2 {
-      font-size: 24px;
-    }
-
-    #about-me-text h3 {
-      font-size: 16px;
-    }
-
-    #about-me-text p {
-      font-size: 12px;
-    }
-
-    .contact h3 {
-      font-size: 16px;
-    }
-
-    .contact p {
-      font-size: 12px;
-    }
+  #contact-form {
+    flex: 1 100%;
   }
 
-  @media screen and (max-width: 450px) {
-    #showcase-text {
-      top: 50%;
-    }
+  #contact-form label {
+    font-size: 14px;
   }
+
+  #contact-form button {
+    margin: 5% auto;
+    width: 100%;
+  }
+
+  #contact-socials {
+    flex: 1 100%;
+  }
+
+  #copyright {
+    flex: 1 100%;
+    margin: 1% auto;
+    text-align: center;
+  }
+  #footer-icons {
+    flex: 1 100%;
+    margin: 1% auto;
+    text-align: center;
+  }
+  footer #contact-info {
+    flex: 1 100%;
+    margin: 1% auto;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 575px) {
+  #logo {
+    margin: 0;
+    padding: 0;
+    flex: 1 100%;
+  }
+
+  #logo img {
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav {
+    margin: 0;
+    padding: 0;
+    flex: 1 100%;
+  }
+
+  header nav ul li {
+    font-size: 14px;
+  }
+
+  header nav ul li a {
+    margin: 0;
+    padding: 0;
+  }
+
+  .section-heading h2 {
+    font-size: 24px;
+  }
+
+  #about-me-text h3 {
+    font-size: 22px;
+  }
+
+  #about-me-text p {
+    font-size: 20px;
+  }
+
+  #about-me-text ul {
+    padding: 12px;
+  }
+
+  .contact h3 {
+    font-size: 16px;
+  }
+
+  .contact p {
+    font-size: 12px;
+  }
+
+  #contact-text h3 {
+    font-size: 22px;
+  }
+
+  #contact-text p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  #showcase-text {
+    top: 50%;
+  }
+}
